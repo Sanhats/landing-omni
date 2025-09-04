@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -20,7 +22,11 @@ export default function LandingPage() {
           Una app pensada para vendedores y profesionales en Argentina que trabajan por WhatsApp.
         </p>
 
-        <Button size="lg" className="text-lg px-8 py-6 bg-accent hover:bg-accent/90 text-accent-foreground">
+        <Button 
+          size="lg" 
+          className="text-lg px-8 py-6 bg-accent hover:bg-accent/90 text-accent-foreground"
+          onClick={() => window.open('https://forms.gle/du29vULq3tTBVLKq7', '_blank')}
+        >
           Quiero ser tester gratis
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
@@ -101,7 +107,11 @@ export default function LandingPage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
+              onClick={() => window.open('https://forms.gle/du29vULq3tTBVLKq7', '_blank')}
+            >
               Anotate al piloto gratis
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -232,7 +242,11 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <Button size="lg" className="text-lg px-12 py-6 bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button 
+            size="lg" 
+            className="text-lg px-12 py-6 bg-accent hover:bg-accent/90 text-accent-foreground"
+            onClick={() => window.open('https://forms.gle/du29vULq3tTBVLKq7', '_blank')}
+          >
             Quiero ser tester gratis
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
